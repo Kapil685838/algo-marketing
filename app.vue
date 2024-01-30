@@ -1,5 +1,7 @@
 <template>
   <div>
+    <AtomsButton  />
+    <MoleculesDropdown />
     <NuxtPage />
   </div>
 </template>

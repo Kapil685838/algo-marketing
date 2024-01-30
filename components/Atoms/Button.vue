@@ -14,7 +14,6 @@
 const props = defineProps({
   type: {
     type: String,
-    required: true,
     default: "button",
   },
   buttonClasses: {
@@ -22,7 +21,6 @@ const props = defineProps({
   },
   label: {
     type: String,
-    required: true,
     default: "Button",
   },
 });
