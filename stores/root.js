@@ -1,25 +1,23 @@
 import { defineStore } from "pinia";
 
-export const useRootStore = defineStore('root', () => {
-    state: {
+export const useRootStore = defineStore('root', {
+    state: () => ({
         nav: {
-            brandLogo: ''
+            brandLogo: '',
+            links: [
+                {
+                    img: '',
+                    label: 'About us'
+                },
+                {
+                    img: '',
+                    label: 'Contact us'
+                }
+            ]
         },
-        navLinks: [
-            {
-                img: '',
-                label: 'About us'
-            },
-            {
-                img: '',
-                label: 'Contact us'
-            }
-        ]
-    },
+    }),
     getters: {
-
-    },
-    actions: {
-
+        getBrandLogo: (state) => state.nav.brand,
+        getNavLinks: (state) => state.nav.links
     }
-})
+});
