@@ -1,8 +1,8 @@
 <template>
   <div>
-    <AtomsButton  />
-    <MoleculesDropdown />
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 
