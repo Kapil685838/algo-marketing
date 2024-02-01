@@ -1,10 +1,14 @@
 <template>
-    <div>
-        <header>
-            <Navbar />
-        </header>
-        <div>
-            <slot />
-        </div>
+  <div>
+    <header class="py-6 border border-bottom-1 sticky top-0 bg-white">
+      <Navbar />
+    </header>
+    <div class="container mx-auto">
+      <slot />
     </div>
+  </div>
 </template>
+
+<script setup>
+
+</script>
