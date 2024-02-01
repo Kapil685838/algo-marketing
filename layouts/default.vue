@@ -1,14 +1,14 @@
 <template>
   <div>
-    <header>
-      <Navbar :nav="root.getNavData"  />
+    <header class="py-6 border border-bottom-1 sticky top-0 bg-white">
+      <Navbar />
     </header>
-    <div>
+    <div class="container mx-auto">
       <slot />
     </div>
   </div>
 </template>
 
 <script setup>
-const root = useRootStore();
+
 </script>

@@ -2,9 +2,9 @@ import { defineStore } from "pinia";
 
 export const useRootStore = defineStore('root', {
     state: () => ({
+        brand: 'Algo Marketing',
+        brandLogo: '',
         nav: {
-            brand: 'Algo Marketing',
-            brandLogo: '',
             links: [
                 {
                     id: 1,
@@ -21,9 +21,4 @@ export const useRootStore = defineStore('root', {
             ]
         },
     }),
-    getters: {
-        getNavData (state) {
-            return state.nav
-        }
-    }
 });

@@ -1,24 +1,19 @@
 <template>
   <div>
-    <nav>
-      <NuxtLink to="/">{{ nav.brand }}</NuxtLink>
-      <div>
-        <ul>
-          <li v-for="nav in nav.links" :key="nav.id">
-            <NuxtLink :to="nav.to">
-              {{ nav.label }}
-            </NuxtLink>
-          </li>
-        </ul>
-      </div>
+    <nav class="container flex items-center justify-between mx-auto">
+      <NuxtLink to="/" class="text-4xl font-bold">{{ root.brand }}</NuxtLink>
+      <ul class="flex items-center gap-6">
+        <li v-for="nav in root.nav.links" :key="nav.id">
+          <img :src="nav.img" alt="">
+          <NuxtLink :to="nav.to">
+            {{ nav.label }}
+          </NuxtLink>
+        </li>
+      </ul>
     </nav>
   </div>
 </template>
 
 <script setup>
-const props = defineProps({
-  nav: {
-    type: Object,
-  },
-});
+const root = useRootStore();
 </script>
