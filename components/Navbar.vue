@@ -1,12 +1,12 @@
 <template>
   <div>
     <nav>
-      <div>Brand</div>
+      <NuxtLink to="/">{{ nav.brand }}</NuxtLink>
       <div>
         <ul>
-          <li >
-            <NuxtLink>
-              label
+          <li v-for="nav in nav.links" :key="nav.id">
+            <NuxtLink :to="nav.to">
+              {{ nav.label }}
             </NuxtLink>
           </li>
         </ul>
@@ -16,5 +16,9 @@
 </template>
 
 <script setup>
-const root = useRootStore();
+const props = defineProps({
+  nav: {
+    type: Object,
+  },
+});
 </script>
