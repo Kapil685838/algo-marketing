@@ -8,13 +8,13 @@ export const useRootStore = defineStore('root', {
             links: [
                 {
                     id: 1,
-                    img: '',
+                    img: '/images/about-icon.svg',
                     to: '/about-us',
                     label: 'About us'
                 },
                 {
                     id: 2,
-                    img: '',
+                    img: '/images/contact-icon.svg',
                     to: '/contact-us',
                     label: 'Contact us'
                 }
