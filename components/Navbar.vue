@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="py-2">
     <nav class="container flex items-center justify-between mx-auto">
       <NuxtLink to="/" class="text-4xl font-bold">{{ root.brand }}</NuxtLink>
       <ul class="flex items-center gap-6">
