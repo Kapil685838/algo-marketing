@@ -1,4 +1,5 @@
 <template>
+    <footer class="footer bgprime light-bg text-center pt-5 pb-3 mt-0">
     <div class="container">
         <div class="row pb-3">
             <div class="col-12 col-md-7 col-lg-6 col-sm-6 pt-3">
@@ -16,11 +17,8 @@
             </div>
             <div class="col-6 col-md-3 col-lg-2 col-sm-2 pt-3 text-left pl-4">
                 <ul>
-                    <li><a href="/about-us">About Us</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/project">Our Work</a></li>
-                    <li><a href="/clients">Clients</a></li>
-                    <li><a href="/our-team">Our Team</a></li>
+                    <li v-for="footerlinks in root.footer.links"><NuxtLink to="/about-us">About Us</NuxtLink></li>
+                    
                 </ul>
             </div>
             <div class="col-6 col-md-2 col-lg-2 col-sm-2 pt-3 text-left">
@@ -62,4 +60,8 @@
             </ul>
         </div>
     </div>
-</div></template>
+</div></footer></template>
+
+<script setup>
+const root = useRootStore();
+</script>
