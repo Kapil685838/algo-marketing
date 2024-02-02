@@ -20,5 +20,23 @@ export const useRootStore = defineStore('root', {
                 }
             ]
         },
+        footer: {
+            links: [
+                {
+                    id: 1,
+                    label: 'About Us',
+                    to: '/about-us'
+                },
+                {
+                    id: 2,
+                    label: 'About Us',
+                    to: '/about-us'
+                },{
+                    id: 3,
+                    label: 'About Us',
+                    to: '/about-us'
+                },
+            ]
+        }
     }),
 });

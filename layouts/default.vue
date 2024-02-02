@@ -6,6 +6,9 @@
     <div class="container mx-auto">
       <slot />
     </div>
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
