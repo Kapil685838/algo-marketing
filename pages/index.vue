@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="top-description" class="scroll-smooth">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus nihil consectetur non. Voluptatem, eius
         esse atque pariatur debitis ex officia, ad mollitia illo praesentium est soluta autem consectetur voluptates a.
         Obcaecati libero perspiciatis nisi corporis magnam laudantium eum quas repellat debitis? Accusamus tempore eveniet
