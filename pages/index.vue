@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="mb-72">
+    <div class="mb-72  relative">
         <img src="/images/two-paperplane.png" class="img-fluid" alt="">
         <div class="container mx-auto">
             <div class="grid grid-cols-3 gap-8">
@@ -36,8 +36,8 @@
                 
             </div>
         </div>
-        <img src="/images/single-paperplane.png" class="absolute w-[66vw]" alt="">
-
+        <img src="/images/single-paperplane.png" class="absolute w-[66vw] right-0 bottom-[-190px] -z-10" alt="">
+ 
     </div>
 </template>
 
