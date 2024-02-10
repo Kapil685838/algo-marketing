@@ -127,7 +127,7 @@ export const useRootStore = defineStore("root", {
         },
         {
           id: 9,
-          to: "/privacy-policy",
+          to: "/",
           label: "Privacy Policy",
         },
       ],
@@ -138,11 +138,11 @@ export const useRootStore = defineStore("root", {
         "brands looking to grow their businesses online. If you are reading this, then you’re on" +
         "the right site to onboard one of the best creative marketing agency in India.",
     },
-    service: {
+    services: {
       title: "Our <br/> Servies",
       description:
         "We help businesses reach their full potential by creating a brand identity that is authentic and reflective of them. We understand that every brand comes with its own unique challenges, and hence requires expertise. We join hands with you as your growth partners and focus on delivering a power-packed panga each time!",
-      card: [
+      cards: [
         {
           id: 1,
           img: "/images/01-service-social-media-creative-srtategy.png",
