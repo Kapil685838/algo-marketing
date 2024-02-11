@@ -5,12 +5,14 @@
       <p class="text-xl">{{ service.description }}</p>
     </div>
 
-    <div class="w-1/2 h-56 bg-cover bg-no-repeat bg-center" :class="`bg-[url('${service.img}')] border border-1`">
-        {{ service.img }}
+    <div class="w-1/2 bg-cover bg-no-repeat bg-center">
+      <img class="mx-auto" :src="service.img" alt="">
     </div>
   </div>
 </template>
 
 <script setup>
 const root = useRootStore();
+
+let serviceImg = ref("");
 </script>
