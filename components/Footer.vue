@@ -1,41 +1,51 @@
 <template>
-    <div class="container">
-    <div class="row pb-3">
-        <div class="col-12 col-md-7 col-lg-6 col-sm-6 pt-3">
-            <div class="row no-gutters">
-                <div class="col-auto">
-                    <img class="img-fluid" src="/wp-content/uploads/2020/10/footer-img.png" alt="">
-                </div>
-                <div class="col">
-                    <div class="card-block px-2 text-left pl-2 pr-2 pl-lg-4 pr-lg-0">
-                        <p class="card-text w-lg-50 w-md-lg-25">Congratulations for traveling from start to the end of this page! We’ll add 10,000 steps to your fitness tracker!<br> 🙂</p>
+    <div class="bg-primary pt-12">
+        <div class="container mx-auto">
+            <div class="flex">
+                <div class="pt-6">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="flex-shrink-0 columns-auto">
+                            <img class="w-auto h-12 md:h-auto" :src="root.footer.img" alt="footer-image">
+                        </div>
+                        <div class="columns-1 pl-6 max-w-96 w-96">
+                            <p class="max-w-36">{{ root.footer.description }}</p>
+                        </div>
                     </div>
                 </div>
+                <div class="columns-2 flex">
+                    <div class="pt-6 text-left pl-4 ">
+                        <ul class="mr-20">
+                            <li v-for="link in root.footer.links1" class="mb-5">
+                                <NuxtLink class="font-bold text-xl" :to="link.to">{{ link.label }}</NuxtLink>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class=" pt-6 text-left ">
+                        <ul class="mr-20">
+                            <li v-for="link in root.footer.links2" class="mb-5">
+                                <NuxtLink class="font-bold text-xl" :to="link.to">{{ link.label }}</NuxtLink>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class=" pt-6 flex flex-col flex-grow">
+                    <ul
+                        class="flex flex-row flex-wrap  md:flex-col justify-center items-center md:justify-end md:items-center">
+                        <li v-for="item in root.socialLinks" class=" mb-5">
+                            <NuxtLink :to="item.to" target="_blank" rel="noopener">
+                                <img class="w-auto max-h-8 md:max-h-10 md:h-auto h-auto" :src="item.img"
+                                    alt="social icons" />
+                            </NuxtLink>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="col-6 col-md-3 col-lg-2 col-sm-2 pt-3 text-left pl-4">
-            <ul>
-                <li><NuxtLink to="/about-us">About Us</NuxtLink></li>
-                
-            </ul>
-        </div>
-        <div class="col-6 col-md-2 col-lg-2 col-sm-2 pt-3 text-left">
-            <ul>
-                <li><a href="/awards">Awards</a></li>
-                <li><a href="/career/">Careers</a></li>
-                <li><a href="/contact-us">Contact Us</a></li>
-                <li><a href="/privacy-policy">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="col-12 col-md-12 col-lg-2 pt-3 text-right">
-            <ul class="social flex flex-row flex-wrap flex-lg-column justify-content-center items-center justify-content-md-end items-md-end">
-                <li><a href="https://www.instagram.com/socialpanga/" target="_blank" rel="noopener"><img class="img-fluid" src="/wp-content/themes/socialpanga/assets/images/icons/instagram-icon.png" alt="Instagram"></a></li>
-                <li><a href="https://twitter.com/socialpanga" target="_blank" rel="noopener"><img class="img-fluid" src="/wp-content/themes/socialpanga/assets/images/icons/twitter-icon.png" alt="Twitter"></a></li>
-                <li><a href="https://www.facebook.com/socialpanga" target="_blank" rel="noopener"><img class="img-fluid" src="/wp-content/themes/socialpanga/assets/images/icons/facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="https://www.linkedin.com/company/socialpanga/" target="_blank" rel="noopener"><img loading="lazy" class="img-fluid" src="/wp-content/themes/socialpanga/assets/images/icons/linkedIn-icon.png" alt="LinkedIn" width="62" height="64"></a></li>
-            </ul>
+            <p class="pl-4 py-4 text-base text-black">{{ root.footer.endDescription }}</p>
         </div>
     </div>
-</div>
-
 </template>
+<script setup>
+const root = useRootStore();
+</script>

@@ -9,7 +9,12 @@ export default {
     "./node_modules/flowbite/**/*.{js,ts}"
   ],
   theme: {
-    extend: {},
+    colors: {
+      primary: "#f8d200"
+    },
+    fontFamily: {
+      'montserrat': ['Montserrat','sans-serif']
+    }
   },
   plugins: [
     require('flowbite/plugin')
