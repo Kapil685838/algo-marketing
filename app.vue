@@ -12,6 +12,12 @@ import { initFlowbite } from "flowbite";
 onMounted(() => {
   initFlowbite();
 });
+
+useHead({
+  htmlAttrs: {
+    style: 'html: scroll-smooth'
+  }
+})
 </script>
 
 <style>
@@ -19,23 +25,23 @@ onMounted(() => {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 14px;
-    height: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #000000;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #f8d200;
-    border-radius: 100px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+  width: 14px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f8d200;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 </style>
