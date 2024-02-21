@@ -1,7 +1,7 @@
 <template>
-    <div class="flex justify-around pt-8">
-        <h1 class="w-1/2 text-6xl font-extrabold leading-normal px-4" v-html="props.title"></h1>
-        <div class="w-1/2 text-xl p-6">
+    <div class="flex flex-col w-full md:flex-row justify-around pt-8">
+        <h1 class="md:w-1/2 w-full text-6xl font-extrabold leading-normal px-4" v-html="props.title"></h1>
+        <div class="md:w-1/2 w-full text-xl p-6">
             <p>{{ props.description }}</p>
         </div>
     </div>
