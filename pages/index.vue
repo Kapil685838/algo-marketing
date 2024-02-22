@@ -162,39 +162,3 @@ const raid = ref("manipalHospitals");
   </div>
 </template>
 
-<style>
-[rel="active-featuredproject-1"] {
-  background: url("https://socialpanga.com/wp-content/uploads/2021/07/manipal.png")
-    no-repeat center/ cover;
-}
-
-[rel="active-featuredproject-2"] {
-  background: url("https://socialpanga.com/wp-content/uploads/2020/12/SP-HomePage-Design-Images-11.jpg")
-    no-repeat center/ cover;
-}
-
-[rel="active-featuredproject-3"] {
-  background: url("https://socialpanga.com/wp-content/uploads/2021/04/bengaluru.png")
-    no-repeat center/ cover;
-}
-
-[rel="active-featuredproject-4"] {
-  background: url("https://socialpanga.com/wp-content/uploads/2021/07/MamaEarth_LeftSide-1.jpg")
-    no-repeat center/ cover;
-}
-
-[rel="active-featuredproject-5"] {
-  background: url("https://socialpanga.com/wp-content/uploads/2021/08/tint.png") no-repeat
-    center/ cover;
-}
-
-[rel="active-featuredproject-6"] {
-  background: url("https://socialpanga.com/wp-content/uploads/2021/04/SP-HomePage-Design-Images-09.jpg")
-    no-repeat center/ cover;
-}
-
-[rel="active-featuredproject-7"] {
-  background: url("https://socialpanga.com/wp-content/uploads/2021/02/cult-featured-large.jpg")
-    no-repeat center/ cover;
-}
-</style>
