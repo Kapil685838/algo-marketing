@@ -3,23 +3,6 @@ const hero_image = ref("");
 const hero_text_mafia = ref(false);
 const hero_text_better = ref(false);
 const hero_text_bigger = ref(false);
-
-const raids = {
-  manipalHospitals: {
-    title: "MANIPAL HOSPITALS",
-    backgroundImage: "/images/manipal.png",
-    img: "/images/manipal2.jpg",
-    description: "An ode to those who protect hope.",
-  },
-  lifestyle: {
-    title: "LIFESTYLE",
-    backgroundImage: "/images/manipal2.jpg",
-    img: "/images/manipal.png",
-    description: "Lifestyle",
-  },
-};
-
-const raid = ref("manipalHospitals");
 </script>
 
 <template>
@@ -35,7 +18,10 @@ const raid = ref("manipalHospitals");
         class="relative z-10 container mx-auto h-[83vh] flex flex-col items-center justify-center"
       >
         <div class="text-5xl text-center font-medium tracking-normal">
-          <p :class="['text-6xl', (hero_text_better || hero_text_bigger) && 'invisible']">
+          <p :class="[
+            'text-6xl',
+            (hero_text_better || hero_text_bigger) && 'invisible'
+            ]">
             <span :class="hero_text_mafia && 'invisible'">We Are </span>
             <span
               :class="[
@@ -63,8 +49,8 @@ const raid = ref("manipalHospitals");
             <span
               :class="[
                 'cursor-pointer font-black',
-                hero_text_better && 'text-white bg-primary px-2',
-              ]"
+                hero_text_better && 'text-white bg-primary px-2'
+                ]"
               @mouseenter="
                 () => {
                   hero_image = '/images/Home-Hero-Awards-Banner-2.jpg';
@@ -86,8 +72,8 @@ const raid = ref("manipalHospitals");
             <span
               :class="[
                 'cursor-pointer font-black',
-                hero_text_bigger && 'text-white bg-primary px-2',
-              ]"
+                hero_text_bigger && 'text-white bg-primary px-2'
+                ]"
               @mouseenter="
                 () => {
                   hero_image = '/images/Home-Hero-Banner3-1.jpg';
@@ -111,33 +97,14 @@ const raid = ref("manipalHospitals");
     <div class="">
       <div class="flex min-h-[80vh]">
         <div
-          class="relative w-1/2 before:content-[''] before:w-full before:h-full before:bg-[#00000055] before:block overflow-hidden"
-        >
-          <img
-            class="absolute top-0 left-0 w-full"
-            :src="raids[raid].backgroundImage"
-            alt=""
-          />
-          <ul
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-center flex flex-col gap-2 text-nowrap"
-          >
-            <li
-              v-for="item in Object.keys(raids)"
-              class="cursor-pointer"
-              :class="raid === item ? 'text-white' : 'text-white'"
-              :key="item"
-              @click="raid = item"
-            >
-              {{ raids[item].title }}
-            </li>
-          </ul>
-        </div>
+          class="w-1/2 bg-[url('/images/manipal.png')] bg-cover bg-no-repeat bg-center before:content-[''] before:w-full before:h-full before:bg-[#00000055] before:block"
+        ></div>
         <div class="w-1/2">
           <div class="p-5 h-full flex justify-center items-center text-center">
             <div>
-              <p>{{ raids[raid].title }}</p>
-              <img :src="raids[raid].img" alt="" />
-              <p>{{ raids[raid].description }}</p>
+              <p>MANIPAL HOSPITALS</p>
+              <img src="/images/manipal2.jpg" alt="" />
+              <p>An ode to those who protect hope.</p>
             </div>
           </div>
         </div>
@@ -162,3 +129,39 @@ const raid = ref("manipalHospitals");
   </div>
 </template>
 
+<style>
+[rel="active-featuredproject-1"] {
+  background: url("https://socialpanga.com/wp-content/uploads/2021/07/manipal.png")
+    no-repeat center/ cover;
+}
+
+[rel="active-featuredproject-2"] {
+  background: url("https://socialpanga.com/wp-content/uploads/2020/12/SP-HomePage-Design-Images-11.jpg")
+    no-repeat center/ cover;
+}
+
+[rel="active-featuredproject-3"] {
+  background: url("https://socialpanga.com/wp-content/uploads/2021/04/bengaluru.png")
+    no-repeat center/ cover;
+}
+
+[rel="active-featuredproject-4"] {
+  background: url("https://socialpanga.com/wp-content/uploads/2021/07/MamaEarth_LeftSide-1.jpg")
+    no-repeat center/ cover;
+}
+
+[rel="active-featuredproject-5"] {
+  background: url("https://socialpanga.com/wp-content/uploads/2021/08/tint.png") no-repeat
+    center/ cover;
+}
+
+[rel="active-featuredproject-6"] {
+  background: url("https://socialpanga.com/wp-content/uploads/2021/04/SP-HomePage-Design-Images-09.jpg")
+    no-repeat center/ cover;
+}
+
+[rel="active-featuredproject-7"] {
+  background: url("https://socialpanga.com/wp-content/uploads/2021/02/cult-featured-large.jpg")
+    no-repeat center/ cover;
+}
+</style>

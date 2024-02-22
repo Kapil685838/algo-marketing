@@ -48,12 +48,30 @@ export const useRootStore = defineStore("root", {
         },
         {
           id: 4,
+          img: "/images/awards-icon.svg",
+          to: "/awards",
+          label: "Awards",
+        },
+        {
+          id: 5,
           img: "/images/clients-icon.svg",
           to: "/clients",
           label: "Clients",
         },
         {
-          id: 5,
+          id: 6,
+          img: "/images/team-icon.svg",
+          to: "/our-team",
+          label: "Our Team",
+        },
+        {
+          id: 7,
+          img: "/images/career-icon.svg",
+          to: "/careers",
+          label: "Careers",
+        },
+        {
+          id: 8,
           img: "/images/contact-icon.svg",
           to: "/contact-us",
           label: "Contact us",
@@ -82,18 +100,33 @@ export const useRootStore = defineStore("root", {
         },
         {
           id: 4,
+          to: "/awards",
+          label: "Awards",
+        },
+        {
+          id: 5,
           to: "/clients",
           label: "Clients",
         },
       ],
       links2: [
         {
-          id: 5,
+          id: 6,
+          to: "/our-team",
+          label: "Our Team",
+        },
+        {
+          id: 7,
+          to: "/careers",
+          label: "Careers",
+        },
+        {
+          id: 8,
           to: "/contact-us",
           label: "Contact us",
         },
         {
-          id: 6,
+          id: 9,
           to: "/",
           label: "Privacy Policy",
         },
