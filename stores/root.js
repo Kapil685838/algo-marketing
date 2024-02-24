@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export const useRootStore = defineStore("root", {
   state: () => ({
-    brand: "Algo Marketing",
+    brand: "Mafia Marketing",
     brandLogo: "",
     socialLinks: [
       {
@@ -47,28 +47,10 @@ export const useRootStore = defineStore("root", {
           label: "Our Work",
         },
         {
-          id: 4,
-          img: "/images/awards-icon.svg",
-          to: "/awards",
-          label: "Awards",
-        },
-        {
           id: 5,
           img: "/images/clients-icon.svg",
           to: "/clients",
           label: "Clients",
-        },
-        {
-          id: 6,
-          img: "/images/team-icon.svg",
-          to: "/our-team",
-          label: "Our Team",
-        },
-        {
-          id: 7,
-          img: "/images/career-icon.svg",
-          to: "/careers",
-          label: "Careers",
         },
         {
           id: 8,
