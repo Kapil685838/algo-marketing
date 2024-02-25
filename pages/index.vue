@@ -1,4 +1,5 @@
 <script setup>
+
 const hero_image = ref("");
 const hero_text_mafia = ref(false);
 const hero_text_better = ref(false);
@@ -73,14 +74,15 @@ const raid = ref("manipalHospitals");
       <!------------- Headings & Backgrounds --------------->
 
       <div class="relative container mx-auto min-h-[83vh] flex flex-col items-center justify-center">
-        <div class="text-3xl lg:text-5xl text-center font-medium tracking-normal leading-relaxed lg:leading-[4.5rem]">
+        <div
+          class="text-2xl sm:text-3xl lg:text-5xl text-center font-medium tracking-normal leading-relaxed lg:leading-[4.5rem]">
           <p :class="[
-            'text-3xl lg:text-6xl',
+            'text-2xl sm:text-3xl lg:text-6xl',
             (hero_text_better || hero_text_bigger) && 'invisible',
           ]">
             <span :class="hero_text_mafia && 'invisible'">We Are </span>
             <span :class="[
-              'cursor-pointer font-black group-has-hover:bg-black',
+              'cursor-pointer font-black group-has-hover:bg-black whitespace-nowrap',
               hero_text_mafia &&
               'text-white bg-primary px-2 transition-all duration-200',
             ]" @mouseenter="() => {
@@ -163,18 +165,17 @@ const raid = ref("manipalHospitals");
 
     <div class="">
       <div class="flex flex-col md:flex-row">
-        <div
-          class="relative w-1/2 before:content-[''] before:w-full before:h-full before:bg-[#00000055] before:block overflow-hidden">
-          <img class="absolute top-0 left-0 w-full h-full lg:h-auto" :src="raids[raid].backgroundImage" alt="" />
+        <div class="relative w-full md:w-1/2 ">
+          <img class="w-full" :src="raids[raid].backgroundImage" alt="" />
           <ul
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-center flex flex-col gap-2 md:text-nowrap">
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl sm:text-3xl md:text-4xl font-bold text-center flex flex-col gap-2 md:text-nowrap">
             <li v-for="item in Object.keys(raids)" class="cursor-pointer"
               :class="raid === item ? 'text-white' : 'raids-title'" :key="item" @click="raid = item">
               {{ raids[item].title }}
             </li>
           </ul>
         </div>
-        <div class="w-1/2">
+        <div class="w-full md:w-1/2">
           <div class="p-5 h-full flex justify-center items-center text-center">
             <div class="flex flex-col items-center gap-2">
               <p>{{ raids[raid].title }}</p>
@@ -189,16 +190,46 @@ const raid = ref("manipalHospitals");
     <div class="mb-72 relative">
       <img src="/images/two-paperplane.png" class="img-fluid" alt="" />
       <div class="container mx-auto">
-        <div class="grid grid-cols-3 gap-8 mx-10">
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-4">
+          <div class="relative rounded-tl-[50px] bg-[#c32126] h-[500px] text-white mb-24 md:mb-0">
+            <div class="px-6 py-10">
+              <p class="text-lg md:text-2xl font-black leading-5">Looking to become the next big name everyone's talking
+                about?</p>
+              <p class="text-xl mt-2 pb-[20%]">Request a perposal.</p>
+
+              <div class="w-full">
+                <img class="w-full" src="/images/infoxbox-ico1.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="relative rounded-tl-[50px] bg-[#0573B6] h-[500px] text-white mb-24 md:mb-0">
+            <div class="px-6 py-10">
+              <p class="text-lg md:text-2xl font-black leading-5">Excited about the wonderful world of digital storytelling?</p>
+              <p class="text-xl mt-2 pb-[20%]">Sign up for our newsletter.</p>
+
+              <div class="w-full">
+                <img class="w-full" src="/images/infoxbox-ico2.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="relative rounded-tl-[50px] bg-[#5F2A7C] h-[500px] text-white mb-24 md:mb-0">
+            <div class="px-6 py-10">
+              <p class="text-lg md:text-2xl font-black leading-5">Fear of missing out on the chance to do your life’s greatest work?</p>
+              <p class="text-xl mt-2 pb-[20%]">Join our team of Mafias.</p>
+
+              <div class="w-full">
+                <img class="w-full" src="/images/infoxbox-ico3.png" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <img src="/images/single-paperplane.png" class="absolute w-[66vw] right-0 bottom-[-190px] -z-10" alt="" />
     </div>
+    
 
-    <Carousel />
   </div>
 </template>
 
@@ -211,6 +242,17 @@ const raid = ref("manipalHospitals");
   width: 15%;
   height: auto;
 }
+
+@media (max-width: 786px) {
+  .gun-wrap {
+    top: 3%;
+    left: 50%;
+    width: 10%;
+    height: auto;
+    transform: translate(-50%, 10px);
+  }
+}
+
 
 .gun:hover {
   position: relative;
@@ -275,6 +317,18 @@ const raid = ref("manipalHospitals");
   animation: move_wave 2s linear 0.5s infinite;
   opacity: 0;
 }
+
+@media (max-width: 786px) {
+  .coffee-wrap {
+    position: absolute;
+    bottom: 9%;
+    right: 45%;
+    width: 6%;
+    height: auto;
+    transform: translate(-50%, 10px);
+  }
+}
+
 
 .raids-title {
   text-stroke: 1px white;
