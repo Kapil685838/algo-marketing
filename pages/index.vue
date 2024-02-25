@@ -169,7 +169,7 @@ const raid = ref("manipalHospitals");
           <ul
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-center flex flex-col gap-2 md:text-nowrap">
             <li v-for="item in Object.keys(raids)" class="cursor-pointer"
-              :class="raid === item ? 'text-white' : 'text-white'" :key="item" @click="raid = item">
+              :class="raid === item ? 'text-white' : 'raids-title'" :key="item" @click="raid = item">
               {{ raids[item].title }}
             </li>
           </ul>
@@ -189,7 +189,7 @@ const raid = ref("manipalHospitals");
     <div class="mb-72 relative">
       <img src="/images/two-paperplane.png" class="img-fluid" alt="" />
       <div class="container mx-auto">
-        <div class="grid grid-cols-3 gap-8">
+        <div class="grid grid-cols-3 gap-8 mx-10">
           <HomeCard />
           <HomeCard />
           <HomeCard />
@@ -201,6 +201,8 @@ const raid = ref("manipalHospitals");
     <Carousel />
   </div>
 </template>
+
+
 <style>
 .gun-wrap {
   position: absolute;
@@ -274,6 +276,13 @@ const raid = ref("manipalHospitals");
   opacity: 0;
 }
 
+.raids-title {
+  text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  -moz-text-fill-color: transparent;
+}
+
 @keyframes move_wave {
   0% {
     transform: translateX(0) translateY(0) translateZ(0);
@@ -294,7 +303,7 @@ const raid = ref("manipalHospitals");
 @keyframes AnimOtd {
   10% {
     transform: rotate(0deg);
-  } 
+  }
 
   25% {
     transform: rotate(-25deg);
@@ -312,14 +321,13 @@ const raid = ref("manipalHospitals");
 
 @keyframes AnimS {
   0% {
-    transform: translate(-180px,70px);
+    transform: translate(-180px, 70px);
     opacity: 0;
   }
 
   50% {
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
     opacity: 1;
   }
 }
-
 </style>
