@@ -14,7 +14,7 @@
                 </div>
                 <div class="columns-2 flex justify-around">
                     <div class="pt-6 text-left md:pl-4">
-                        <ul class="">
+                        <ul class="mr-0 md:mr-20">
                             <li v-for="link in root.footer.links1" class="mb-5">
                                 <NuxtLink class="font-bold text-xl" :to="link.to">{{ link.label }}</NuxtLink>
                             </li>
