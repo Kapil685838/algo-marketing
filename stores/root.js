@@ -43,7 +43,7 @@ export const useRootStore = defineStore("root", {
         {
           id: 3,
           img: "/images/projects-icon.svg",
-          to: "/our-work",
+          to: "/project",
           label: "Our Work",
         },
         {
@@ -77,13 +77,8 @@ export const useRootStore = defineStore("root", {
         },
         {
           id: 3,
-          to: "/our-work",
+          to: "/project",
           label: "Our Work",
-        },
-        {
-          id: 4,
-          to: "/awards",
-          label: "Awards",
         },
         {
           id: 5,
@@ -92,16 +87,6 @@ export const useRootStore = defineStore("root", {
         },
       ],
       links2: [
-        {
-          id: 6,
-          to: "/our-team",
-          label: "Our Team",
-        },
-        {
-          id: 7,
-          to: "/careers",
-          label: "Careers",
-        },
         {
           id: 8,
           to: "/contact-us",
@@ -196,45 +181,6 @@ export const useRootStore = defineStore("root", {
           label: "Technology",
           description:
             "Only unrealistic aspect of us using technology is the experience we create for you outside our daily lives using the best of tech and tools.",
-        },
-      ],
-    },
-    ourwork: {
-      title: "Our ^325+SharpShooters",
-      description:
-        "The Mafias love to talk about their conquests over a freshly brewed pitcher of beer. Client satisfaction is significant to them, as they strive for nothing short of creative excellence. Here are a few smart goals that were set and smashed successfully.",
-      images: [
-        {
-          id: "1",
-          img: "/images/ourWorkImg1.png",
-        },
-        {
-          id: "2",
-          img: "/images/ourWorkImg2.png",
-        },
-        {
-          id: "3",
-          img: "/images/ourWorkImg3.png",
-        },
-        {
-          id: "4",
-          img: "/images/ourWorkImg4.png",
-        },
-        {
-          id: "5",
-          img: "/images/ourWorkImg5.png",
-        },
-        {
-          id: "6",
-          img: "/images/ourWorkImg6.png",
-        },
-        {
-          id: "7",
-          img: "/images/ourWorkImg7.png",
-        },
-        {
-          id: "8",
-          img: "/images/ourWorkImg8.png",
         },
       ],
     },
