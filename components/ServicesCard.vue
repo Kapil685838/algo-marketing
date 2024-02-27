@@ -1,8 +1,8 @@
 <template>
   <div v-for="service in root.services.cards" :key="service.id" 
-  class="flex flex-col space-y-10 md:space-y-0 md:flex-row items-center md:odd:flex-row-reverse">
+  class="flex flex-col mb-6 md:space-y-0 md:flex-row items-center md:odd:flex-row-reverse">
     <div class="w-full md:w-1/2 py-4 px-6 md:px-12">
-      <h3 v-html="service.label" class="font-extrabold text-2xl"></h3>
+      <h3 v-html="service.label" class="font-extrabold text-2xl mb-4"></h3>
       <p class="text-xl">{{ service.description }}</p>
     </div>
 
