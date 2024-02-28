@@ -6,7 +6,9 @@
       <p class="text-xl">{{ service.description }}</p>
     </div>
 
-    <div class="w-full md:w-1/2 relative overflow-hidden bg-cover bg-no-repeat bg-center">
+    <div class="w-full md:w-1/2 relative overflow-hidden bg-cover bg-no-repeat bg-center"
+         @mouseover="hovering = service.id"
+         @mouseleave="hovering = null">
       <img class="mx-auto transition-opacity duration-300 ease-in-out hover:opacity-0" :src="service.img" alt="">
       <img v-if="hovering === service.id" class="mx-auto absolute inset-0" :src="service.gif" alt="">
     </div>
