@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="bg-primary group relative flex flex-col md:flex-row">
+    <div class="bg-primary group relative flex flex-col min-h-[100vh] md:flex-row">
       <div
-        class="relative container mx-auto min-h-[83vh] flex flex-col items-center justify-center text-xl font-medium z-10"
+        class="relative container mx-auto flex flex-col -top-20 max-w-screen-md items-center justify-center text-xl font-medium z-10"
       >
         <h1 class="text-6xl font-bold">Mafia</h1>
         <p>/ˈmæf.i.ə/</p>
-        <p>The quintessential villain who brings out the best in the hero and is the sole reason for his existence – the Joker to Batman, the Gabbar Singh to Thakur, the Darth Vader to Luke Skywalker. These are the guys and girls whose punchlines and schemes are remembered forever.</p>
+        <p class="text-center text-lg mt-6 font-semibold">The quintessential villain who brings out the best in the hero and is the sole reason for his existence – the Joker to Batman, the Gabbar Singh to Thakur, the Darth Vader to Luke Skywalker. These are the guys and girls whose punchlines and schemes are remembered forever.</p>
       </div>
        <img class="absolute left-0 bottom-0 " src="/images/about-banner-spacing-1.png" alt="">
     </div>
