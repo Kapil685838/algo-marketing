@@ -3,7 +3,7 @@
     <nav class="container flex flex-row lg:flex-row lg:items-center justify-between mx-auto w-full">
       <div class="flex flex-col lg:flex-row lg:items-center w-full justify-between items-start">
         <NuxtLink to="/" class="text-2xl md:text-4xl font-bold w-full">{{ root.brand }}</NuxtLink>
-        <ul  id="navbar-default" class="w-full hidden lg:flex flex-col lg:flex-row items-center space-x-0 lg:space-x-8 space-y-4 lg:space-y-0">
+        <ul  id="navbar-default" class="w-full hidden lg:flex flex-col justify-end lg:flex-row items-center space-x-0 lg:space-x-8 space-y-4 lg:space-y-0">
           <li v-for="nav in root.nav.links" :key="nav.id">
             <NuxtLink :to="nav.to" class="flex flex-col items-center group">
               <img :src="nav.img" class="w-12 -mb-1 group-hover:visible" :class="route.path === nav.to ? '' : 'invisible'"
