@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Up />
+    <Up class="z-10" @click="topFunction()"  />
     <div class="font-[montserrat]">
       <header id="header"
         class="z-50 transition-all ease-in-out duration-300 border border-b border-[#dee2e6] sticky top-0 bg-white py-2">
@@ -27,5 +27,10 @@ function handleScroll() {
 
 if (process.client) {
   window.addEventListener('scroll', handleScroll);
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
