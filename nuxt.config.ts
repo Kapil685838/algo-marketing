@@ -5,4 +5,11 @@ export default defineNuxtConfig({
   pinia: {
     storesDirs: ["./stores/**", "./custom-folder/stores/**"],
   },
+  app: {
+    head: {
+      htmlAttrs: {
+        class: 'scroll-smooth'
+      }
+    }
+  }
 });
