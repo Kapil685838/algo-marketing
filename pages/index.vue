@@ -524,7 +524,6 @@ const raid = ref("manipalHospitals");
 }
 
 .raids-title {
-  text-stroke: 1px white;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px white;
   -moz-text-fill-color: transparent;
