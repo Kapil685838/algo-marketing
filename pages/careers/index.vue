@@ -1,6 +1,12 @@
 <script setup lang="ts">
 const career: string = ref("mafia");
 
+const careerStore = useCareerStore();
+const activeTab = ref(0);
+const activeCategory = computed(() => {
+  return careerStore.availableLocations[activeTab];
+});
+
 const careerQuestions: Record<string, object> = {
   mafia: {
     title: "MAFIA",
@@ -26,38 +32,74 @@ const careerQuestions: Record<string, object> = {
 </script>
 
 <template>
-    <div class="">
-        <div class="bg-[#F8D200] py-10">
-            <div class="max-w-screen-xl flex flex-col md:flex-row">
-                <div class="relative w-full md:w-1/2">
-                    <ul class="pl-32 text-2xl sm:text-3xl md:text-8xl font-bold flex flex-col gap-2">
-                        <li v-for="item in Object.keys(careerQuestions)" class="cursor-pointer"
-                            :class="career === item ? 'text-white' : 'stroke-text'" :key="item"
-                            @mouseenter="career = item">
-                            <span class="relative block" :class="[
+  <div class="">
+    <div class="bg-[#F8D200] py-10">
+      <div class="max-w-screen-xl flex flex-col md:flex-row">
+        <div class="relative w-full md:w-1/2">
+          <ul
+            class="pl-32 text-2xl sm:text-3xl md:text-8xl font-bold flex flex-col gap-2"
+          >
+            <li
+              v-for="item in Object.keys(careerQuestions)"
+              class="cursor-pointer"
+              :class="career === item ? 'text-white' : 'stroke-text'"
+              :key="item"
+              @mouseenter="career = item"
+            >
+              <span
+                class="relative block"
+                :class="[
                   career === item &&
                     'after:absolute after:border-[1rem] after:border-r-white after:border-transparent after:top-1/2 after:right-0 after:-translate-y-1/2',
-                ]">
-                                {{ careerQuestions[item].title }}
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-full bg-white p-4 rounded-3xl rounded-ss-none max-w-lg md:w-1/2">
-                    <div class="p-5 flex justify-center items-center text-center">
-                        <div class="flex flex-col items-center gap-2">
-                            <p>{{ careerQuestions[career].description }}</p>
-                        </div>
-                    </div>
-                </div>
+                ]"
+              >
+                {{ careerQuestions[item].title }}
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full bg-white p-4 rounded-3xl rounded-ss-none max-w-lg md:w-1/2">
+          <div class="p-5 flex justify-center items-center text-center">
+            <div class="flex flex-col items-center gap-2">
+              <p>{{ careerQuestions[career].description }}</p>
             </div>
+          </div>
         </div>
-
-        <div class="py-10">
-            <h2 class="text-center text-6xl font-bold mb-10">Open Positions</h2>
-            <div></div>
-        </div>
+      </div>
     </div>
+
+    <div class="py-10">
+      <h2 class="text-center text-6xl font-bold mb-10">Open Positions</h2>
+      <!-- Projects Section Start -->
+      <div class="w-full">
+        <!-- Filters -->
+        <div>
+          <ul class="flex flex-wrap gap-4 font-bold justify-center my-4 text-lg">
+            <li
+              v-for="(item, index) in careerStore.avalilableLocations"
+              :key="`${item}-${index}`"
+              class="cursor-pointer"
+              :class="activeTab === index ? 'text-red-500' : ''"
+              @click="handleActiveLocation(index)"
+            >
+              {{ item.toUpperCase() }}
+            </li>
+          </ul>
+        </div>
+        <!-- Project List -->
+        <div
+          class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 py-6"
+        >
+          <!-- <div v-for="project in ourWork.filteredProjects" :key="project.id">
+            <NuxtLink to="/project">
+              <img class="" :src="project.image" alt="" />
+            </NuxtLink>
+          </div> -->
+        </div>
+      </div>
+      <!-- Projects Section End -->
+    </div>
+  </div>
 </template>
 
 <style scoped>
