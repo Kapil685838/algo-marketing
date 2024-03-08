@@ -47,13 +47,19 @@ export const useRootStore = defineStore("root", {
           label: "Our Work",
         },
         {
+          id: 4,
+          img: "/images/career-icon.svg",
+          to: "/careers",
+          label: "Careers",
+        },
+        {
           id: 5,
           img: "/images/clients-icon.svg",
           to: "/clients",
           label: "Clients",
         },
         {
-          id: 8,
+          id: 6,
           img: "/images/contact-icon.svg",
           to: "/contact-us",
           label: "Contact us",
