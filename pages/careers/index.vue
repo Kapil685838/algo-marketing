@@ -41,22 +41,22 @@ const handleOpenPositions = (location) => {
 <template>
   <div class="">
     <div class="bg-[#F8D200] py-10">
-      <div class="max-w-screen-xl flex flex-col md:flex-row">
+      <div class="max-w-screen- flex flex-col justify-center gap-4 md:gap-0 md:flex-row">
         <div class="relative w-full md:w-1/2">
           <ul class="pl-32 text-2xl sm:text-3xl md:text-8xl font-bold flex flex-col gap-2">
             <li v-for="item in Object.keys(careerQuestions)" class="cursor-pointer"
               :class="career === item ? 'text-white' : 'stroke-text'" :key="item" @mouseenter="career = item">
               <span class="relative block" :class="[
                   career === item &&
-                    'after:absolute after:border-[1rem] after:border-r-white after:border-transparent after:top-1/2 after:right-0 after:-translate-y-1/2',
+                    'md:after:absolute md:after:border-[1rem] md:after:border-r-white md:after:border-transparent md:after:top-1/2 md:after:right-0 md:after:-translate-y-1/2',
                 ]">
                 {{ careerQuestions[item].title }}
               </span>
             </li>
           </ul>
         </div>
-        <div class="w-full bg-white p-4 rounded-3xl rounded-ss-none max-w-lg md:w-1/2">
-          <div class="p-5 flex justify-center items-center text-center">
+        <div class="w-full p-4 md:p-0 max-w-lg md:w-1/2">
+          <div class="p-6 md:p-12 bg-white rounded-3xl max-w-[320px] rounded-ss-none h-full flex justify-center">
             <div class="flex flex-col items-center gap-2">
               <p>{{ careerQuestions[career].description }}</p>
             </div>
@@ -78,12 +78,12 @@ const handleOpenPositions = (location) => {
           </ul>
         </div>
 
-        <div class="w-full py-6">
+        <div class="w-full py-6 px-4">
           <div v-for="item in careerStore.getOpenPositions" :key="item"
-            class="flex items-center justify-between border-b-2 border-gray-300 py-6">
-            <div>
+            class="flex items-center flex-col gap-2 justify-between border-b-2 border-gray-300 py-6 md:flex-row">
+            <div class="text-center">
               <p class="text-xl font-bold mb-2">{{ item.designation }} ({{ item.experience }})</p>
-              <div class="flex items-center gap-4">
+              <div class="flex items-center justify-center md:justify-start gap-4">
                 <span>{{ item.type }}</span>
                 <div class="flex items-center gap-1">
                   <span class="h-1.5 w-1.5 bg-black rounded-full"></span>
@@ -92,7 +92,7 @@ const handleOpenPositions = (location) => {
               </div>
             </div>
             <button
-              class="pl-8 pr-3 py-2 bg-[#e1bb08] hover:bg-[#f8d200] rounded-full flex items-center gap-2"><span>Apply
+              class="min-w-max pl-8 pr-3 py-2 bg-[#e1bb08] hover:bg-[#f8d200] rounded-full flex items-center gap-2"><span>Apply
                 Now</span> <svg class="rotate-90 ml-2" height="24" width="24" version="1.1" id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 51.9 53.5" style="enable-background: new 0 0 51.9 53.5" xml:space="preserve">
