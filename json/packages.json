@@ -10,9 +10,70 @@
                 "para-3": "Local SEO ensures that your business is visible to potential customers in your local area. Make it easier for customers to find you when they are searching for businesses like yours. If you are not already investing in local SEO, now is the time to start!"
             },
             "img": "local-seo-packages-hero-img.png"
+        },
+        "mainContent": {
+            "packagesBenefits": {
+                "title": "Benefits Of Local SEO Packages",
+                "subtitle": "\"Near Me\" Searches Have Increased By More Than 400%.",
+                "description": {
+                    "para-1": "As the world of business becomes increasingly more competitive, it’s important to make sure that your company is doing everything it can to get ahead. One key way to do this is by investing in local SEO.",
+                    "para-2": "SEO, or search engine optimization, is a process by which businesses can improve their visibility and ranking on search engines like Google and Bing. Local SEO specifically refers to the practice of optimizing a business for local searches."
+                },
+                "benefitsDetailing": {
+                    "title": "Here Are Some Of The Benefits That Come With Investing In Local SEO Packages For Your Business:",
+                    "list": [
+                        {
+                            "title": "Increased Visibility",
+                            "description": {
+                                "para-1": "Local SEO is a great way to increase your visibility and draw in more local customers. By optimizing your website and online listings for local search, you can appear higher in search results (similar to the image shown below) and attract more attention from people searching for businesses like yours.",
+                                "image": {
+                                    "url": "/images/packages/local-seo-packages-increased-visibility.webp",
+                                    "position": "center"
+                                },
+                                "para-2": "When your business achieves a high ranking on Google Maps, it will be more visible to people who could become potential customers. When they conduct a search, they have a greater chance of coming across your listing, which, in turn, may result in an increase in the number of customers for your business.",
+                                "para-3": "<strong>“90% of people read Google My Business reviews before contacting any service providers.”</strong>"
+                            }
+                        },
+                        {
+                            "title": "More Targeted Traffic",
+                            "description": {
+                                "image": {
+                                    "url": "/images/packages/local-seo-packages-increased-visibility.webp",
+                                    "position": "left"
+                                },
+                                "para-1": "Local SEO can help you to attract more targeted traffic by optimizing your website for local search. When people search for businesses or services in their local area, they are more likely to find websites that have been optimized for local search. This means that your website will appear higher in the search results when people search for keywords related to your business or service in your local area.",
+                                "para-2": "Local SEO is a great way to attract more customers and clients who are looking for what you have to offer. By optimizing your website for local search, you can make it easier for potential customers to find you and learn more about your business. Achieving a high ranking on Google Maps may also increase brand recognition. As more people view your ad and visit your website, your brand will become more recognizable. This can lead to additional clients in the future."
+                            }
+                        },
+                        {
+                            "title": "Higher ROI On The Advertisement",
+                            "description": {
+                                "image": {
+                                    "url": "/images/packages/local-seo-packages-increased-visibility.webp",
+                                    "position": "right"
+                                },
+                                "para-1": "If you’re looking for a way to reduce your advertising costs and get a higher return on investment (ROI), consider using local SEO. By optimizing your website for local search, you can reach potential customers who are searching for businesses like yours in their area.",
+                                "para-2": "<strong>Local SEO can reduce the cost of customer acquisition by 87.41% on average compared to digital advertising</strong>",
+                                "source": "https://www.impactplus.com/blog/seo-statistics",
+                                "para-3": "This can be a very effective way to get in front of your target audience and generate leads, sales, and revenue. Additionally, local SEO can help you build brand awareness and credibility, which can lead to even more business down the line. So if you’re looking for ways to save money on advertising and get a better ROI, consider using local SEO."
+                            }
+                        }
+                    ]
+                }
+            }
         }
     },
     "local-seo": {
-        "description": "This is the local-seo Page"
+        "hero": {
+            "tag": "Affordable Local SEO Packages in India",
+            "packageName": "Local SEO Packages",
+            "title": "Make Your Business Stand Out Using Local SEO Packages",
+            "description": {
+                "para-1": "If you own a local business and aren’t optimizing your website for local SEO, you are missing out on potential customers! Local SEO is a powerful tool that can help you reach new customers in your area. By optimizing your website for local search, you can improve your visibility in search engines and attract more people to your business.",
+                "para-2": "<strong>“85% of online searchers who do a local search for any service or brand on the internet visit or call the business within a day”</strong>",
+                "para-3": "Local SEO ensures that your business is visible to potential customers in your local area. Make it easier for customers to find you when they are searching for businesses like yours. If you are not already investing in local SEO, now is the time to start!"
+            },
+            "img": "local-seo-packages-hero-img.png"
+        }
     }
 }
