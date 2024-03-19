@@ -100,6 +100,32 @@
                     ]
                 }
             },
+            "offPageServices": {
+                "title": "Off-Page SEO Services",
+                "description": [
+                    "<a href='#'>Offpage SEO</a> is just as important as on-page SEO when it comes to optimizing your website for search engines. Off-page SEO refers to all the activities that you do outside of your website to improve your website’s ranking in search engine results pages (SERPs). This includes things like link building, social media engagement, and creating informative content."
+                ],
+                "services": {
+                    "title": "Here are our off-page SEO services.",
+                    "list": [
+                        [
+                            "Local Citation Blog submission",
+                            "Powerpoint Creation And Submission",
+                            "Content Marketing"
+                        ],
+                        [
+                            "Infographic Creation And Sharing",
+                            "Local Classifieds",
+                            "Video Creation"
+                        ],
+                        [
+                            "Press Release Submission",
+                            "Social Media Profile Creation",
+                            "Blog Submission Blogger Outreach"
+                        ]
+                    ]
+                }
+            },
             "faqs": {
                 "title": "FAQs About Our Local SEO Packages",
                 "questions": [
