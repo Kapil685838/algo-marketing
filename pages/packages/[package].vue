@@ -108,10 +108,42 @@
         </div>
 
         <!-- On-Page SEO Services -->
+        <div v-if="data.mainContent.onPageServices" class="py-6">
+          <p class="text-3xl font-semibold text-center mb-6">
+            {{ data.mainContent.onPageServices.title }}
+          </p>
+          <p
+            v-for="item in data.mainContent.onPageServices.description"
+            :key="item"
+            v-html="item"
+            class="leading-loose *:has-[a]:text-red-500"
+          ></p>
+          <p class="leading-loose pt-4 pb-8 text-center">
+            {{ data.mainContent.onPageServices.services.title }}
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              v-for="item in data.mainContent.onPageServices.services.list"
+              :key="item"
+              class="border rounded-lg p-6 hover:shadow-lg"
+            >
+              <p class="text-3xl font-semibold pb-6">{{ item.heading }}</p>
+              <p
+                v-for="(description, index) of item.description"
+                :key="description"
+                class="leading-loose *:has-[a]:text-red-500"
+                :class="index !== item.description.length - 1 && 'mb-3'"
+                v-html="description"
+              ></p>
+            </div>
+          </div>
+        </div>
 
         <!-- FAQ's -->
-        <div v-if="data.mainContent.faqs" class="">
-          <p class="text-3xl font-semibold text-center mb-6">{{ data.mainContent.faqs.title }}</p>
+        <div v-if="data.mainContent.faqs" class="py-6">
+          <p class="text-3xl font-semibold text-center mb-6">
+            {{ data.mainContent.faqs.title }}
+          </p>
           <div
             id="faqs-accordion"
             data-accordion="collapse"
@@ -125,7 +157,9 @@
                 <button
                   type="button"
                   class="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-gray-200 gap-3"
-                  :class="index !== data.mainContent.faqs.questions.length - 1 && 'border-b-0'"
+                  :class="
+                    index !== data.mainContent.faqs.questions.length - 1 && 'border-b-0'
+                  "
                   :data-accordion-target="'#faqs-accordion-body-' + index"
                   aria-expanded="true"
                   :aria-controls="'faqs-accordion-body-' + index"
@@ -156,7 +190,11 @@
               >
                 <div
                   class="p-5 border border-gray-200"
-                  :class="index === data.mainContent.faqs.questions.length - 1 ? 'border-t-0' : 'border-b-0'"
+                  :class="
+                    index === data.mainContent.faqs.questions.length - 1
+                      ? 'border-t-0'
+                      : 'border-b-0'
+                  "
                 >
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
                     Flowbite is an open-source library of interactive components built on
