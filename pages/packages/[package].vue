@@ -96,9 +96,85 @@
                 ]"
                 alt=""
               />
-              <a v-else-if="key.includes('source')" :href="item.description[key]" target="_blank" class="text-red-500"
+              <a
+                v-else-if="key.includes('source')"
+                :href="item.description[key]"
+                target="_blank"
+                class="text-red-500"
                 >Source</a
               >
+            </template>
+          </div>
+        </div>
+
+        <!-- On-Page SEO Services -->
+
+        <!-- FAQ's -->
+        <div v-if="data.mainContent.faqs" class="">
+          <p class="text-3xl font-semibold text-center mb-6">{{ data.mainContent.faqs.title }}</p>
+          <div
+            id="faqs-accordion"
+            data-accordion="collapse"
+            data-active-classes="text-black"
+          >
+            <template
+              v-for="(item, index) in data.mainContent.faqs.questions"
+              :key="item"
+            >
+              <h2 :id="'faqs-accordion-' + index">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-gray-200 gap-3"
+                  :class="index !== data.mainContent.faqs.questions.length - 1 && 'border-b-0'"
+                  :data-accordion-target="'#faqs-accordion-body-' + index"
+                  aria-expanded="true"
+                  :aria-controls="'faqs-accordion-body-' + index"
+                >
+                  <span>{{ item.question }}</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                :id="'faqs-accordion-body-' + index"
+                class="hidden"
+                :aria-labelledby="'faqs-accordion-' + index"
+              >
+                <div
+                  class="p-5 border border-gray-200"
+                  :class="index === data.mainContent.faqs.questions.length - 1 ? 'border-t-0' : 'border-b-0'"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Flowbite is an open-source library of interactive components built on
+                    top of Tailwind CSS including buttons, dropdowns, modals, navbars, and
+                    more.
+                  </p>
+                  <p class="text-gray-500 dark:text-gray-400">
+                    Check out this guide to learn how to
+                    <a
+                      href="/docs/getting-started/introduction/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline"
+                      >get started</a
+                    >
+                    and start developing websites even faster with components on top of
+                    Tailwind CSS.
+                  </p>
+                </div>
+              </div>
             </template>
           </div>
         </div>
