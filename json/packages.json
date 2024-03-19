@@ -60,6 +60,35 @@
                         }
                     ]
                 }
+            },
+            "faqs": {
+                "title": "FAQs About Our Local SEO Packages",
+                "questions": [
+                    {
+                        "question": "What should an SEO package include?",
+                        "answer": [
+                            "When you are looking for an SEO package, there are a few things that you should keep in mind. The first is the size of your business. If you are a small business, you may not need all of the services that an SEO company offers. You may be able to get away with just basic services, such as keyword research and on-page optimization.",
+                            "Another thing to consider is your budget. An SEO package can be expensive, and it may not be affordable for everyone. If you are on a tight budget, you may want to look for a company that offers discounts or payment plans.",
+                            "Finally, you should consider the experience and reputation of the company. You want to work with someone who knows what they are doing and has a good track record."
+                        ]
+                    },
+                    {
+                        "question": "How much is an SEO package?",
+                        "answer": [
+                            "SEO is one of the most important aspects of online marketing. It can help you rank higher in search engine results pages, which can lead to more website visitors and more customers. If you’re looking for an SEO package, you may be wondering how much they cost.",
+                            "SEO packages vary in price, depending on the size and complexity of the project. Generally, smaller projects will cost less than larger ones. You can expect to pay anywhere from several hundred dollars to several thousand dollars for an SEO package.",
+                            "However, it’s important to remember that SEO is an ongoing process, and you should expect to pay monthly fees for maintenance and updates. The cost of an SEO package can be a good investment in your business’ success."
+                        ]
+                    },
+                    {
+                        "question": "Are SEO packages worth it?",
+                        "answer": [
+                            "There are a lot of SEO packages on the market. But are they worth the investment?",
+                            "The answer to that question depends on your business. If you’re just starting out, an SEO package can be a great way to get your website ranked higher in search engines. And if you’re looking for ways to improve your website’s ranking, an SEO package is definitely worth considering.",
+                            "But if you’ve been in business for a while and have a well-established website, an SEO package might not offer enough value to justify the cost. In that case, it might be better to focus on other areas of your marketing strategy."
+                        ]
+                    }
+                ]
             }
         }
     },
