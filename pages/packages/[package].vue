@@ -106,8 +106,6 @@
             </template>
           </div>
         </div>
-
-        <!-- On-Page SEO Services -->
         <div v-if="data.mainContent.onPageServices" class="py-6">
           <p class="text-3xl font-semibold text-center mb-6">
             {{ data.mainContent.onPageServices.title }}
@@ -138,8 +136,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Off-Page SEO Services -->
         <div v-if="data.mainContent.offPageServices" class="py-6">
           <p class="text-3xl font-semibold my-6">
             {{ data.mainContent.offPageServices.title }}
@@ -181,11 +177,18 @@
             </div>
           </div>
         </div>
-
-        <!-- Off-Page SEO Services -->
-        <div></div>
-
-        <!-- FAQ's -->
+        <div v-if="data.mainContent.partner" class="py-6">
+          <p class="text-3xl font-semibold my-6">
+            {{ data.mainContent.partner.title }}
+          </p>
+          <img :src="data.mainContent.partner.image" alt="" />
+          <p
+            v-for="item in data.mainContent.partner.description"
+            :key="item"
+            v-html="item"
+            class="leading-loose *:has-[a]:text-red-500"
+          ></p>
+        </div>
         <div v-if="data.mainContent.faqs" class="py-6">
           <p class="text-3xl font-semibold text-center mb-6">
             {{ data.mainContent.faqs.title }}
