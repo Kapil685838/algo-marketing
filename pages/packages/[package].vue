@@ -108,10 +108,88 @@
         </div>
 
         <!-- On-Page SEO Services -->
+        <div v-if="data.mainContent.onPageServices" class="py-6">
+          <p class="text-3xl font-semibold text-center mb-6">
+            {{ data.mainContent.onPageServices.title }}
+          </p>
+          <p
+            v-for="item in data.mainContent.onPageServices.description"
+            :key="item"
+            v-html="item"
+            class="leading-loose *:has-[a]:text-red-500"
+          ></p>
+          <p class="leading-loose pt-4 pb-8 text-center">
+            {{ data.mainContent.onPageServices.services.title }}
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              v-for="item in data.mainContent.onPageServices.services.list"
+              :key="item"
+              class="border rounded-lg p-6 hover:shadow-lg"
+            >
+              <p class="text-3xl font-semibold pb-6">{{ item.heading }}</p>
+              <p
+                v-for="(description, index) of item.description"
+                :key="description"
+                class="leading-loose *:has-[a]:text-red-500"
+                :class="index !== item.description.length - 1 && 'mb-3'"
+                v-html="description"
+              ></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Off-Page SEO Services -->
+        <div v-if="data.mainContent.offPageServices" class="py-6">
+          <p class="text-3xl font-semibold my-6">
+            {{ data.mainContent.offPageServices.title }}
+          </p>
+          <p
+            v-for="item in data.mainContent.offPageServices.description"
+            :key="item"
+            v-html="item"
+            class="leading-loose *:has-[a]:text-red-500"
+          ></p>
+          <p class="leading-loose pt-4 pb-8">
+            {{ data.mainContent.offPageServices.services.title }}
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-4">
+            <div
+              v-for="item in data.mainContent.offPageServices.services.list"
+              :key="item"
+              class="shrink max-h-min"
+            >
+              <div v-for="li in item" :key="li">
+                <div class="flex items-start gap-1.5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5 mt-1.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M10.5 15.25A.74.74 0 0 1 10 15l-3-3a.75.75 0 0 1 1-1l2.47 2.47L19 5a.75.75 0 0 1 1 1l-9 9a.74.74 0 0 1-.5.25"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M12 21a9 9 0 0 1-7.87-4.66a8.67 8.67 0 0 1-1.07-3.41a9 9 0 0 1 4.6-8.81a8.67 8.67 0 0 1 3.41-1.07a8.86 8.86 0 0 1 3.55.34a.75.75 0 1 1-.43 1.43a7.62 7.62 0 0 0-3-.28a7.43 7.43 0 0 0-2.84.89a7.5 7.5 0 0 0-2.2 1.84a7.42 7.42 0 0 0-1.64 5.51a7.43 7.43 0 0 0 .89 2.84a7.5 7.5 0 0 0 1.84 2.2a7.42 7.42 0 0 0 5.51 1.64a7.43 7.43 0 0 0 2.84-.89a7.5 7.5 0 0 0 2.2-1.84a7.42 7.42 0 0 0 1.64-5.51a.75.75 0 1 1 1.57-.15a9 9 0 0 1-4.61 8.81A8.67 8.67 0 0 1 12.93 21z"
+                    />
+                  </svg>
+                  <p class="leading-loose">{{ li }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Off-Page SEO Services -->
+        <div></div>
 
         <!-- FAQ's -->
-        <div v-if="data.mainContent.faqs" class="">
-          <p class="text-3xl font-semibold text-center mb-6">{{ data.mainContent.faqs.title }}</p>
+        <div v-if="data.mainContent.faqs" class="py-6">
+          <p class="text-3xl font-semibold text-center mb-6">
+            {{ data.mainContent.faqs.title }}
+          </p>
           <div
             id="faqs-accordion"
             data-accordion="collapse"
@@ -125,7 +203,9 @@
                 <button
                   type="button"
                   class="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-gray-200 gap-3"
-                  :class="index !== data.mainContent.faqs.questions.length - 1 && 'border-b-0'"
+                  :class="
+                    index !== data.mainContent.faqs.questions.length - 1 && 'border-b-0'
+                  "
                   :data-accordion-target="'#faqs-accordion-body-' + index"
                   aria-expanded="true"
                   :aria-controls="'faqs-accordion-body-' + index"
@@ -156,7 +236,11 @@
               >
                 <div
                   class="p-5 border border-gray-200"
-                  :class="index === data.mainContent.faqs.questions.length - 1 ? 'border-t-0' : 'border-b-0'"
+                  :class="
+                    index === data.mainContent.faqs.questions.length - 1
+                      ? 'border-t-0'
+                      : 'border-b-0'
+                  "
                 >
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
                     Flowbite is an open-source library of interactive components built on

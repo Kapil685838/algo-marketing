@@ -61,6 +61,80 @@
                     ]
                 }
             },
+            "onPageServices": {
+                "title": "On-Page SEO Services",
+                "description": [
+                    "<a href='#'>Onpage SEO</a> is very important for any website. It includes <a href='#'>technical seo services</a> to optimize your website’s title, description, and keywords to make it more visible on search engine results pages (SERPs). In addition, on-page SEO also helps improve your website’s click-through rate (CTR) and organic search traffic."
+                ],
+                "services": {
+                    "title": "Here are our on-page SEO services:",
+                    "list": [
+                        {
+                            "heading": "Keyword Research",
+                            "description": [
+                                "If you’re looking to improve your website’s ranking in search engines, our SEO experts can help. We start by performing keyword research to identify the terms that potential customers are using to find businesses like yours.",
+                                "We then help you identify ways to incorporate those keywords into your website content, whether it’s through blog posts, product descriptions, or incorporating them into your website’s copywriting. By improving your website’s ranking for relevant keywords, you can attract more visitors and turn them into customers."
+                            ]
+                        },
+                        {
+                            "heading": "Website Audit & Error Removal",
+                            "description": [
+                                "A website audit is a process of assessing a website to identify any areas that need improvement. We start by looking at the overall structure of the website. We check for things like proper navigation, URL structure, sitemap, and site architecture. All of these factors play a role in how well a website performs and how user-friendly it is. We also assess the website’s robots file and sitemap to ensure they are optimized for search engines. This helps improve the visibility of the website and can lead to more traffic.",
+                                "Finally, we check the website’s loading speed. A fast website is essential for a good user experience. If a website takes too long to load, users will likely leave before they even see what the site has to offer. By performing a deep site audit, we can identify any areas that need improvement. This helps ensure that our client’s websites are performing at their best and providing a good experience for users."
+                            ]
+                        },
+                        {
+                            "heading": "Content Audit",
+                            "description": [
+                                "At RankOn Technologie, we believe that content is king. That’s why we always perform an in-depth content audit before starting any content optimization project. This allows us to find out which areas need improvement in order to make your website’s content more search-engine friendly.",
+                                "We check for things like heading tags, page titles, keyword density, keyword proximity, keyword prominence, and keyword diversity. By improving these factors, we can help your website rank higher in search engine results pages (SERPs), driving more traffic to your site."
+                            ]
+                        },
+                        {
+                            "heading": "Competitor Audit",
+                            "description": [
+                                "Our SEO experts perform a thorough <a href='#'>SEO competitor analysis</a> for your niche. We check out their website’s domain authority and back-building strategy to create a better SEO strategy.",
+                                "This is important because it allows us to see what is working for them and how we can improve upon that. Additionally, it provides valuable insights into the current trends in your industry so that we can better tailor our approach to fit your needs."
+                            ]
+                        }
+                    ]
+                }
+            },
+            "offPageServices": {
+                "title": "Off-Page SEO Services",
+                "description": [
+                    "<a href='#'>Offpage SEO</a> is just as important as on-page SEO when it comes to optimizing your website for search engines. Off-page SEO refers to all the activities that you do outside of your website to improve your website’s ranking in search engine results pages (SERPs). This includes things like link building, social media engagement, and creating informative content."
+                ],
+                "services": {
+                    "title": "Here are our off-page SEO services.",
+                    "list": [
+                        [
+                            "Local Citation Blog submission",
+                            "Powerpoint Creation And Submission",
+                            "Content Marketing"
+                        ],
+                        [
+                            "Infographic Creation And Sharing",
+                            "Local Classifieds",
+                            "Video Creation"
+                        ],
+                        [
+                            "Press Release Submission",
+                            "Social Media Profile Creation",
+                            "Blog Submission Blogger Outreach"
+                        ]
+                    ]
+                }
+            },
+            "partner": {
+                "title": "Partner With The Best Local SEO Service Company In India",
+                "image": "/images/packages/local-seo-packages-service.webp",
+                "description": [
+                    "We provide the best local SEO plans in India. With years of experience and affordable packages, we are the best choice for all your SEO needs. We will help you to increase your online visibility and organic traffic and to improve your website ranking in search engine results pages. We will also help you to achieve your desired goals and objectives and to reach your target audience more effectively.",
+                    "Our local business <a href='#'>SEO packages</a> are the best in the industry because we are able to provide our clients with a comprehensive and customized approach that is tailored to their specific needs. We have a team of experts who are experienced in all aspects of local SEO, and we use the latest tools and techniques to ensure that our clients are getting the most effective results.",
+                    "Contact us today for a consultation, and let us show you how we can help you to grow your business online."
+                ]
+            },
             "faqs": {
                 "title": "FAQs About Our Local SEO Packages",
                 "questions": [
