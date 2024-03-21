@@ -47,6 +47,23 @@ export const useRootStore = defineStore("root", {
           label: "Our Work",
         },
         {
+          id: 5,
+          img: "/images/career-icon.svg",
+          to: "",
+          label: "Packages",
+          type: "dropdown",
+          dropdownLinks: [
+            {
+              to: "/packages/local-seo-packages",
+              label: "Local SEO Packages"
+            },
+            {
+              to: "/packages/local-seo",
+              label: "Local SEO"
+            }
+          ]
+        },
+        {
           id: 4,
           img: "/images/career-icon.svg",
           to: "/careers",

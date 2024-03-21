@@ -271,6 +271,12 @@
 </template>
 
 <script setup lang="ts">
+import { initFlowbite } from "flowbite";
+
+onMounted(() => {
+  initFlowbite();
+});
+
 const route = useRoute();
 
 const { data } = await useFetch(`/api/packages/${route.params.package}`);
