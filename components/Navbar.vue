@@ -14,7 +14,7 @@
           class="w-full hidden lg:flex flex-col justify-end lg:flex-row items-center space-x-0 lg:space-x-8 space-y-4 lg:space-y-0"
         >
           <li v-for="nav in root.nav.links" :key="nav.id">
-            <div v-if="nav.type === 'dropdown'" class="relative">
+            <div v-if="nav.type === 'dropdown'" class="relative flex flex-col lg:flex-row justify-center text-center">
               <button class="flex flex-col items-center group relative peer">
                 <img
                   :src="nav.img"
@@ -40,7 +40,7 @@
               </button>
               <ul
                 v-if="nav.dropdownLinks"
-                class="absolute top-full -left-1/2 border py-2 bg-white rounded-md hidden hover:block peer-hover:block"
+                class="lg:absolute lg:top-full lg:-left-1/2 border py-2 bg-white lg:rounded-md hidden hover:block peer-hover:block"
               >
                 <li
                   v-for="i in nav.dropdownLinks"
