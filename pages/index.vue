@@ -316,7 +316,7 @@ const raid = ref("manipalHospitals");
       />
     </div>
 
-    <div class="container mx-auto relative min-h-[623px]">
+    <div class="container py-20 mx-auto relative ">
       <div class="awards_creatives">
         <img
           src="https://socialpanga.com/wp-content/themes/socialpanga/assets/images/home/award-bg-new.svg"
