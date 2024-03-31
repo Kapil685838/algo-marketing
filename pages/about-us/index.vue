@@ -1,18 +1,18 @@
 <template>
   <div>
-    <div class="bg-primary group relative flex flex-col min-h-[100vh] md:flex-row">
+    <div class="bg-primary group relative flex flex-col py-20 pb-32 sm:pb-60 md:pb-80 lg:pb-96 px-4 md:flex-row">
       <div
-        class="relative container mx-auto flex flex-col -top-20 max-w-screen-md items-center justify-center text-xl font-medium z-10"
+        class="relative container mx-auto flex flex-col max-w-screen-md items-center justify-center text-xl font-medium z-10"
       >
-        <h1 class="text-6xl font-bold">Mafia</h1>
+        <h1 class="text-4xl md:text-6xl font-bold">Mafia</h1>
         <p>/ˈmæf.i.ə/</p>
         <p class="text-center text-lg mt-6 font-semibold">The quintessential villain who brings out the best in the hero and is the sole reason for his existence – the Joker to Batman, the Gabbar Singh to Thakur, the Darth Vader to Luke Skywalker. These are the guys and girls whose punchlines and schemes are remembered forever.</p>
       </div>
        <img class="absolute left-0 bottom-0 " src="/images/about-banner-spacing-1.png" alt="">
     </div>
 
-    <div class="py-24 px-52 flex flex-col text-center gap-4 text-lg font-semibold">
-      <h1 class="text-6xl font-bold">Plan, Create and Connect.</h1>
+    <div class="px-4 py-8 md:py-24 md:px-52 flex flex-col text-center gap-4 text-lg font-semibold">
+      <h1 class="text-4xl md:text-6xl font-bold">Plan, Create and Connect.</h1>
       <p class="px-4">
         We are an award-winning creative marketing and advertising agency. We ideate,
         curate and execute marketing strategies to engage with our clients’ intended
@@ -30,9 +30,9 @@
       </div>
     </div>
 
-    <div class="py-24 px-64 flex flex-col text-center gap-4 text-lg font-semibold">
-      <h1 class="text-6xl font-bold">Customer Delight</h1>
-      <p class="font-extrabold text-2xl">
+    <div class="px-4 py-8 md:py-24 md:px-64 flex flex-col text-center gap-4 text-lg font-semibold">
+      <h1 class="text-4xl md:text-6xl font-bold">Customer Delight</h1>
+      <p class="font-extrabold text-xl md:text-2xl">
         We make the customers orgasm when we lay out our ideas and creatives in front of
         them.
       </p>
@@ -48,7 +48,7 @@
     </div>
 
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-20 px-20 font-semibold"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-20 px-12 sm:px-20 font-semibold"
     >
       <div class="flex flex-col gap-4 items-center p-6 bg-[#D7D7D7]">
         <img src="/images/customer-delight-icon-1.png" alt="" />
