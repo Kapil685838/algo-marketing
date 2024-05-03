@@ -211,6 +211,12 @@ export const useRootStore = defineStore("root", {
         },
       ],
     },
+    team:{
+      title:"Our Team",
+      description:
+      "Discover a Squad of Mafias",
+      subTitle:"Bored Of regular teams? Try Something New."
+    },
     ourteam: {
       title: "Our Brand Raids",
       description:
