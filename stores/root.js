@@ -60,6 +60,10 @@ export const useRootStore = defineStore("root", {
             {
               to: "/packages/local-seo",
               label: "Local SEO"
+            },
+            {
+              to: '/packages/local-seo-2',
+              label: 'Local SEO-2'
             }
           ]
         },

@@ -178,5 +178,18 @@
             },
             "img": "local-seo-packages-hero-img.png"
         }
+    },
+    "local-seo-2": {
+        "hero": {
+            "tag": "Affordable",
+            "packageName": "Local SEO Packages",
+            "title": "Make Your Business Stand Out Using Local SEO Packages",
+            "description": {
+                "para-1": "If you own a local business and aren’t optimizing your website for local SEO, you are missing out on potential customers! Local SEO is a powerful tool that can help you reach new customers in your area. By optimizing your website for local search, you can improve your visibility in search engines and attract more people to your business.",
+                "para-2": "<strong>“85% of online searchers who do a local search for any service or brand on the internet visit or call the business within a day”</strong>",
+                "para-3": "Local SEO ensures that your business is visible to potential customers in your local area. Make it easier for customers to find you when they are searching for businesses like yours. If you are not already investing in local SEO, now is the time to start!"
+            },
+            "img": "local-seo-packages-hero-img.png"
+        }
     }
 }
