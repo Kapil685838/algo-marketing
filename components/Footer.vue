@@ -92,8 +92,8 @@ const scrollTo = (id) => {
 
 <style lang="scss" scoped>
 .section {
-  min-height: 100vh;
-  height: 100vh;
+  /* min-height: 100vh;
+  height: 100vh; */
   width: 100vw;
   background-color: #fff;
   position: relative;
