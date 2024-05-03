@@ -55,7 +55,11 @@
         <li class="menu-item" @click="() => scrollTo('about')">About</li>
         <li class="menu-item" @click="() => scrollTo('roadmap')">Roadmap</li>
         <li class="menu-item" @click="() => scrollTo('showcase')">Showcase</li>
-        <li class="menu-item" @click="() => scrollTo('team')">Team</li>
+        <li class="menu-item">
+          <NuxtLink to="/team">
+            Team
+          </NuxtLink>
+        </li>
         <li class="menu-item" @click="() => scrollTo('faq')">Faq</li>
       </ul>
     </div>
