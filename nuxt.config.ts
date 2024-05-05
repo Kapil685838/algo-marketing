@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   pinia: {
     storesDirs: ["./stores/**", "./custom-folder/stores/**"],
   },
+  plugins: [
+    { src: '~/plugins/vue-confetti.js', mode: 'client' },
+  ],
   app: {
     head: {
       htmlAttrs: {
