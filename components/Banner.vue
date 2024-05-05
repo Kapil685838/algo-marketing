@@ -1,92 +1,150 @@
-<template>
-    <section class="w-full h-96 md:h-60 relative border-t-2 border-gray-700 bg-opacity-90 bg-gray-900 flex justify-center items-center overflow-hidden md:flex-col">
-      <div class="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center opacity-20">
-        <!-- Your image container -->
-        <img src="@/assets/Nfts/bighead.svg" alt="The Weirdos" width="7rem" class="md:w-28" />
+<script setup>
+const root = useRootStore();
+</script>
 
-        <img src="@/assets/Nfts/bighead-1.svg" alt="The Weirdos" class="w-40 md:w-28" />
-        <img src="@/assets/Nfts/bighead-2.svg" alt="The Weirdos" class="w-40 md:w-28" />
-        <img src="@/assets/Nfts/bighead-3.svg" alt="The Weirdos" class="w-40 md:w-28" />
-        <img src="@/assets/Nfts/bighead-4.svg" alt="The Weirdos" class="w-40 md:w-28" />
-        <img src="@/assets/Nfts/bighead-5.svg" alt="The Weirdos" class="w-40 md:w-28" />
-      </div>
-      
-      <h1 class="text-4xl md:text-5xl text-white font-semibold z-10 w-1/3 text-center md:w-full md:py-4 md:text-center">Join the <br/> Weirdos Club</h1>
-      <div class="w-1/3 flex justify-end z-10 md:w-full md:mt-2 md:justify-center">
-        <button class="bg-gray-900 text-white font-semibold py-2 px-6 md:py-1 md:px-4 rounded-full transition-transform duration-200 transform hover:scale-95 hover:after">
-          Join Now
-        </button>
-      </div>
-    </section>
-  </template>
-  
-  <script>
-  export default {
-    name: 'Banner'
+<template>
+  <section class="section banner">
+    <div class="img-container">
+      <img src="/images/Nfts/bighead.svg" alt="The Weirdos" />
+      <img src="/images/Nfts/bighead-1.svg" alt="The Weirdos" />
+      <img src="/images/Nfts/bighead-2.svg" alt="The Weirdos" />
+      <img src="/images/Nfts/bighead-3.svg" alt="The Weirdos" />
+      <img src="/images/Nfts/bighead-2.svg" alt="The Weirdos" />
+      <img src="/images/Nfts/bighead-2.svg" alt="The Weirdos" />
+    </div>
+    <h1 class="title">Join the <br /> Weirdos Club</h1>
+    <div class="btn-container">
+      <button class="joi-now">
+        Join Now
+      </button>
+    </div>
+  </section>
+</template>
+
+<style scoped lang="scss">
+.section.banner {
+  width: 100vw;
+  height: 25rem;
+  position: relative;
+  border-top: 2px solid  #202020;
+  border-top: 2px solid #202020;
+
+  background-color: rgba(32, 32, 32, 0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  @media (max-width: 48em) {
+    height: 15rem;
+    flex-direction: column;
   }
-  </script>
-  
-  <style scoped>
-  /* Add any custom styles here */
-  /* No need to include the styled-component styles as they are translated into Tailwind CSS classes */
-  
-  /* Additional Tailwind CSS classes to match the styled-components styles */
-  section {
-    position: relative;
+}
+
+.img-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+
+  img {
+    width: 15rem;
+    height: auto;
   }
-  
-  section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 2px);
-    height: 100%;
-    border-top: 2px solid #374151;
+
+  @media (max-width: 48em) {
+    img {
+      width: 10rem;
+      height: auto;
+    }
   }
-  
-  /* Match the ImgContainer style */
-  div > img {
-    opacity: 0.2;
+}
+
+.title {
+  font-size: 3em;
+  color: #fff;
+  padding: 1rem 2rem;
+  z-index: 10;
+  width: 35%;
+  text-transform: capitalize;
+
+  text-shadow: 1px 1px 2px #202020;
+
+  @media (max-width: 64em) {
+    font-size: 3em;
+    text-align: center;
+    width: 40%;
   }
-  
-  /* Match the Title style */
-  h1 {
-    width: 35%;
-    text-transform: capitalize;
-    text-shadow: 1px 1px 2px #374151;
+
+  @media (max-width: 48em) {
+    font-size: 2em;
+    padding: 2rem 0;
+    width: 100%;
   }
-  
-  /* Match the BtnContainer style */
-  div > button {
-    padding: 1.5rem 3rem;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
+}
+
+.btn-container {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 48em) {
+    width: 100;
+    justify-content: center;
   }
-  
-  div > button:hover {
+}
+
+.joi-now {
+  display: inline-block;
+  background-color: #fff;
+  color: #202020;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 1.25em;
+  padding: 1.5rem 3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+
+  @media (max-width: 48em) {
+    padding: 1rem 2rem;
+  }
+
+  @media (max-width: 30em) {
+    padding: 0.5rem 2rem;
+    font-size: 0.875em;
+  }
+
+  &:hover {
     transform: scale(0.9);
   }
-  
-  div > button::after {
-    content: '';
+
+  &::after {
+    content: ' ';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: 2px solid #1f2937;
+    border: 2px solid #fff;
     width: 100%;
     height: 100%;
     border-radius: 50px;
     transition: all 0.2s ease;
   }
-  
-  div > button:hover::after {
+
+  &:hover::after {
     transform: translate(-50%, -50%) scale(1);
     padding: 0.3rem;
   }
-  </style>
-  
+}
+</style>
