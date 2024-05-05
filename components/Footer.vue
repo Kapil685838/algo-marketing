@@ -1,8 +1,8 @@
 <template>
-  <section class="section">
+  <section class="section footer">
 
     <!-- Banner Start -->
-    <div class="banner" />
+    <Banner />
     <!-- Banner End -->
 
     <!-- Container Start -->
@@ -94,9 +94,9 @@ const scrollTo = (id) => {
 </script>
 
 <style lang="scss" scoped>
-.section {
-  /* min-height: 100vh;
-  height: 100vh; */
+.section.footer {
+  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   background-color: #fff;
   position: relative;
